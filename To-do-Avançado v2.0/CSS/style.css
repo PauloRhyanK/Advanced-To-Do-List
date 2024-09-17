@@ -1,0 +1,15 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+body {
+    background-image: url("../IMG/mesh-gradient.png ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+

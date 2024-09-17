@@ -1,0 +1,75 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo Avançado</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+        <script src="js/scripts.js" defer></script>
+    </head>
+    <body>
+        <Head>
+            <p class="title-container">To-do-List Avançado</p>
+        </Head>
+        
+        <div class="painel-container">
+            <div class="new-task container">
+                <input type="text" id="new-task" placeholder="Typing new task...">
+                <button id="add-task"><i class="fa-solid fa-check"></i></button>    
+            </div>
+        </div>
+        <div class="container-two">
+            <div class="Search-container">
+                <form action="" method="get">
+                    <input type="seach" id="search-box" placeholder="Typing your task...">
+                    <button id="search-task"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div  class="filter-container">
+                <label for="task-status">Status:</label>
+                <select name="task-status" id="taskstatus">
+                    <option value="concluded">Concluded</option>
+                    <option value="progess">in progess</option>
+                    <option value="ninicialized">not inicialized</option>
+                </select>
+                <button type="button">Aplicar</button>
+            </div>
+        </div>
+        <div class="taks-list">
+            <p class="title-container">Suas Tarefas</p>
+            <div class="task-list">
+                <div class="task">
+                    <input type="checkbox" class="task-checkbox" />
+                    <label for="task-label">Minha task</label>
+                    <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+                    <button class="remove-btn"><i class="fa-solid fa-trash"></i></button>
+                </div>
+                <div class="task">
+                    <input type="checkbox" class="task-checkbox" />
+                    <label for="task-label">Outra task</label>
+                    <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+                    <button class="remove-btn"><i class="fa-solid fa-trash"></i></button>
+                </div>
+                <div class="task">
+                    <input type="checkbox" class="task-checkbox" />
+                    <label for="task-label">Mais uma task</label>
+                    <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+                    <button class="remove-btn"><i class="fa-solid fa-trash"></i></button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </body>

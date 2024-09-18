@@ -1,8 +1,12 @@
 Classes:
 title-container : titulos dos containers
+painel-geral: Painel de controle e tarefas
 Painel-container : Para o painel de inserção, busca e filtro de tarefas
 new-task container: Container da inserção de tarefas
 container-two: Container com search e filter
 Search-container: Container de busca
 filter-container: Container do filtro
 taks-list: Container das tarefas
+
+
+(INCOMPLETO)

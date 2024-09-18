@@ -3,8 +3,10 @@ html, body {
     margin: 0;
     padding: 0;
     text-align: center;
-
+    color: white;
+    font-family: Arial;
 }
+
 
 body {
     background-image: url("../IMG/mesh-gradient.png ");
@@ -12,4 +14,106 @@ body {
     background-size: cover;
     min-height: 100%;
 }
+
+.painel-geral{
+    padding-top: 1.2rem;
+    padding-bottom: 3rem;
+    background-color: rgb(41, 41, 41);
+    margin: 4vh;
+    border-radius: 1rem;
+}
+
+.painel-container{
+   padding: 1rem;
+
+}
+
+.adm-container{
+    padding: 20px;
+    margin-inline: 50px;
+    text-align: start;
+    border-bottom: 0.1px solid rgb(193, 193, 193);
+    border-radius: 3px;
+}
+
+.task-container{
+    margin-top: 3rem;
+    padding-block: 0.5rem;
+    padding-inline: 2rem;
+    border-radius: 0.35rem;
+    background-color: #353535;
+    text-align: start;
+    margin-inline: 3rem;
+}
+
+.task{
+    padding: 10px;
+    padding-top: 1px;
+    padding-inline: 10px;
+    margin: 20px;
+    border-radius: 10px;
+
+
+    background-color: #475a6d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+
+.title-task{
+    text-align: center;
+    flex-basis: 100%;
+}
+
+
+.label-style{
+    font-size: 2.5vh;
+    text-align: right;
+}
+
+.title-container{
+    font-size: 2rem;
+}
+
+.subtitle-container{
+    font-size: 1.5rem;
+}
+
+input {
+    padding: 0.3rem;
+    border-radius: 0.55rem;
+    border: none;
+}
+
+select{
+    padding: 0.3rem;
+    border-radius: 0.55rem;
+    border: none;
+}
+
+button  {
+    border-radius: 0.35rem;
+    padding: 0.25rem;
+    padding-inline: 1.3rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 12, 108);
+    border: none;
+    cursor: pointer; /* Cursor de clique */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    color: white;
+    background-color: #004085; /* Cor de fundo ao clicar */
+    transform: scale(0.98); /* Efeito de "apertar" o botão */
+}
+
+
+
+
+/* Tags Especificas */
 

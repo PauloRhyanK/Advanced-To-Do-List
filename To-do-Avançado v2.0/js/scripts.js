@@ -2,6 +2,7 @@
 const newtask = document.getElementById("new-task");
 const posttask = document.getElementById("add-task");
 const tasklist = document.querySelector(".task-list");
+const filtertask = document.getElementById(".")
 
 // *****
 // Funções
@@ -12,16 +13,33 @@ posttask.addEventListener("click", () => {
 
     let text = newtask.value.trim();
     if (text){
-        const task = `
-                    <div class="task">
-                        <p class="title-task">${text}</p><br>
-                        <button class="concluded"><i class="fa-solid fa-check"></i></button>
-                        <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
-                        <button class="remove-btn"><i class="fa-solid fa-trash"></i></button>
-                    </div>      
-        `;
+        const divtask = document.createElement("div");
+        divtask.classList.add("task")
+        const titletask = document.createElement("p");
+        
+        titletask.classList.add("title-task");
+        titletask.textContent = text;
 
-        tasklist.innerHTML += (task);
+        const bconcluded = document.createElement("button");
+        bconcluded.classList.add("concluded");
+        bconcluded.innerHTML = '<i class="fa-solid fa-check"></i>';
+
+        const bedit = document.createElement("button");
+        bedit.classList.add("edit-btn");
+        bedit.innerHTML = '<i class="fa-solid fa-pen">';
+
+        const bremove = document.createElement("button");
+        bremove.classList.add("remove-btn")
+        bremove.innerHTML = '<i class="fa-solid fa-trash">'
+
+
+        divtask.appendChild(titletask);
+        divtask.appendChild(bconcluded);
+        divtask.appendChild(bedit);
+        divtask.appendChild(bremove);
+
+        tasklist.insertBefore(divtask, tasklist.firstChild);
+
         newtask.value = "";
     } else {
         alert("Campo vazio, insira sua tarefa");
@@ -105,3 +123,33 @@ tasklist.addEventListener("click", (event) => {
 
 })
 
+// Concluindo task
+tasklist.addEventListener("click", (event) =>{
+    if (event.target && event.target.classList.contains("concluded")){
+        const task = event.target.closest(".task");
+        const titletask = task.querySelector(".title-task")
+        const btnTask = task.querySelectorAll("button")
+
+        if (task.classList.contains("completed-task")){
+            task.classList.remove("completed-task")
+            titletask.classList.remove("completed-title")
+
+            btnTask.forEach(button => {
+                button.classList.remove("button-completed");
+            });
+
+
+        } else {
+            task.classList.add("completed-task");
+            titletask.classList.add("completed-title")
+
+            btnTask.forEach(button => {
+                button.classList.add("button-completed");
+            });
+            
+
+            tasklist.appendChild(task);
+        }
+    }
+
+})

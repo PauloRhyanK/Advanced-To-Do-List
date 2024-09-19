@@ -7,6 +7,3 @@ container-two: Container com search e filter
 Search-container: Container de busca
 filter-container: Container do filtro
 taks-list: Container das tarefas
-
-
-(INCOMPLETO)

@@ -1,0 +1,176 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+}
+
+
+body {
+    background-image: url("../IMG/mesh-gradient.png ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.painel-geral{
+    padding-top: 1.2rem;
+    padding-bottom: 3rem;
+    background-color: rgb(41, 41, 41);
+    margin: 4vh;
+    border-radius: 1rem;
+}
+
+.painel-container{
+   padding: 1rem;
+
+}
+
+.adm-container{
+    padding: 20px;
+    margin-inline: 50px;
+    text-align: start;
+    border-bottom: 0.1px solid rgb(193, 193, 193);
+    border-radius: 3px;
+}
+
+.task-container{
+    margin-top: 3rem;
+    padding-block: 0.5rem;
+    padding-inline: 2rem;
+    border-radius: 0.5rem;
+    background-color: #353535;
+    text-align: start;
+    margin-inline: 3rem;
+}
+
+li.task{
+    padding: 10px;
+    padding-top: 1px;
+    padding-inline: 10px;
+    margin: 3px;
+    border-radius: 10px;
+
+
+    background-color: #475a6d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title-container{
+    font-size: 2rem;
+}
+
+.subtitle-container{
+    font-size: 1.5rem;
+}
+
+.taskContent{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 10px;
+    text-align: center;
+    flex-basis: 100%;
+}
+.sumir{
+    display: none;
+}
+
+/* .label-style{
+    font-size: 2.5vh;
+    text-align: right;
+} */
+
+/* Padrões HTML */
+
+select{
+    padding: 0.3rem;
+    border-radius: 0.55rem;
+    border: none;
+}
+
+button  {
+    border-radius: 0.35rem;
+    padding: 0.25rem;
+    padding-inline: 1.3rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 12, 108);
+    border: none;
+    cursor: pointer; /* Cursor de clique */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    color: white;
+    background-color: #004085; /* Cor de fundo ao clicar */
+    transform: scale(0.98); /* Efeito de "apertar" o botão */
+}
+
+input {
+    padding: 0.3rem;
+    border-radius: 0.55rem;
+    border: none;
+}
+
+
+
+
+
+/* Tags Especificas */
+
+
+/* Mudança ao editar task */
+.title-task{
+    align-self: flex-start;
+}
+
+.titleEdit{
+    font-size: small;
+    font-style: italic;
+    align-self: flex-start;
+    margin: 1px;
+}
+
+.inputEdit{
+    font-size: medium;
+    padding: 10px;
+    padding-inline: auto;
+    margin: 8px;
+    margin-left: 0px;
+
+}
+
+.confirm-btn{
+    align-self: center;
+    border: none;
+    padding: 0.1px;
+    padding-inline: 30px;
+    background-color: rgb(109, 139, 117);
+    color: rgb(255, 255, 255);
+    font-size: small;
+}
+
+
+
+/* Mudanças ao concluir task */
+
+li.completed-task{
+    background-color: rgb(88, 109, 88);
+    text-align: center;
+    flex-basis: 100%;
+    text-decoration: line-through;
+    color: rgb(172, 170, 170);
+    
+}
+.btnCompleted{
+    background-color: rgb(172, 170, 170);
+    color: #ffffff;
+}
+
+
